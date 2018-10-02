@@ -1,3 +1,4 @@
+```
 date=(optional 请输入开始年份 as number,optional 请输入结束年份 as number)=>
 
 let
@@ -34,3 +35,4 @@ if [日序号] = 6 then "WD6" else
     work_day = Table.AddColumn(day_in_week_name , "工作日", each if [日序号] = 6 or [日序号] = 0 then "休息日" else "工作日" )
 in
     work_day
+```
